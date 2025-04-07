@@ -9,6 +9,8 @@ from src.main import get_group_agg
 
 def show_cli():
     
+    st.title("Perfil dos Clientes")
+    
     cols = st.columns(2)
     with cols[0]:
         df_gender = df["CustomerGender"].value_counts().reset_index()
