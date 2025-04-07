@@ -11,6 +11,8 @@ def main():
             st.Page("src/pages/Visao_Geral.py", title="Visão Geral"),
             st.Page("src/pages/Desempenho_por_Categoria.py", title="Desempenho por Categoria"),
             st.Page("src/pages/Impacto_de_Promoções.py", title="Impacto de Promoções"),
+            st.Page("src/pages/Perfil_dos_Clientes.py", title="Perfil dos Clientes"),
+
         ],
     }
 

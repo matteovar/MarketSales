@@ -4,7 +4,7 @@ import plotly.express as px
 
 from src.utils.plotly_charts.bar_chart import bar_chart1
 from src.utils.plotly_charts.line_chart import line_chart1
-from src.main import df, get_data_agg, sales_date, fat_cat
+from src.main import df, get_data_agg, get_group_agg
 from src.utils.cards import create_cards
 
 def show_dashboard():
@@ -27,10 +27,10 @@ def show_dashboard():
     col_chart = st.columns(2)
     
     with col_chart[0]:
-        df_sales_date = sales_date(df)
+        df_sales_date = get_group_agg(df=df, group_col="TransactionDate", agg_col="FinalSalePrice", agg_type="sum")
         line_chart1(df=df_sales_date, x= "TransactionDate", y="FinalSalePrice", title="Receita ao longo do tempo")
     with col_chart[1]:    
-        df_fat_cat = fat_cat(df)
+        df_fat_cat = get_group_agg(df=df, group_col="ProductCategory", agg_col="FinalSalePrice", agg_type="sum")
         bar_chart1(df = df_fat_cat, x = "ProductCategory", y= "FinalSalePrice", title="Faturamento por categoria")
         
 show_dashboard()

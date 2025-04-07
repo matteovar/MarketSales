@@ -1,17 +1,15 @@
 import pandas as pd
 import streamlit as st
 
-from src.utils.plotly_charts.pie_chart import pie_chart1
 from src.utils.plotly_charts.line_chart import line_chart1
-from src.main import df, rec_cat
+from src.main import df, get_group_agg
 
 
 def show_hello():
     st.title("Desempenho por Categoria de Produto")
     
-    st.dataframe(df)
     
-    df_rec_cat = rec_cat(df)
+    df_rec_cat = get_group_agg(df=df, group_col=["ProductID", "ProductCategory"], agg_col="FinalSalePrice", agg_type="sum")
     
     option = st.selectbox("Select a box", options = df_rec_cat["ProductCategory"].unique())
 
