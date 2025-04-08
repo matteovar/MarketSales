@@ -13,13 +13,13 @@ def show_dashboard():
     cols = st.columns(4)  
 
     with cols[0]:  
-        create_cards("Total Revenue", f"{get_data_agg(df=df,column_name="FinalSalePrice", agg_type="sum"):,.2f}")
+        create_cards("Total Revenue", f"$ {get_data_agg(df=df,column_name="FinalSalePrice", agg_type="sum"):,.2f}")
 
     with cols[1]:  
         create_cards("Sold number", f"{get_data_agg(df=df,column_name="SalesQuantity", agg_type="sum")}")
 
     with cols[2]:  
-        create_cards("Customer Feedback", f"{get_data_agg(df=df,column_name="CustomerFeedbackRating", agg_type="mean"):.1f}")
+        create_cards("Customer Feedback", f"{get_data_agg(df=df,column_name="CustomerFeedbackRating", agg_type="mean"):.1f}⭐")
 
     with cols[3]:  
         create_cards("Return Percentage", f"{(get_data_agg(df=df,column_name="ReturnFlag", agg_type="sum")/1000)*100}%")
