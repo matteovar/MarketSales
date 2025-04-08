@@ -1,12 +1,12 @@
-from .Desempenho_por_Categoria import show_hello
-from .Visao_Geral import show_dashboard
-from .Impacto_de_Promoções import show_dic
-from .Perfil_dos_Clientes import show_cli
+from .Performance_by_Category import show_hello
+from .General_Informations import show_dashboard
+from .Impact_of_Promotions import show_dic
+from .Costumer_Profile import show_cli
 
 # Dicionário com todas as páginas disponíveis
 pages = {
-    "Visao Geral": show_dashboard,
-    "Desempenho_por_Categoria.py": show_hello,
-    "Impacto de Promoções": show_dic,
-    "Perfil dos Clientes.py": show_cli
+    "General Informations": show_dashboard,
+    "Performance_by_Category.py": show_hello,
+    "Impact of Promotions": show_dic,
+    "Costumer_Profile.py": show_cli
 }

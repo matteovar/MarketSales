@@ -7,12 +7,11 @@ st.set_page_config(page_title="Sales", layout="wide")
 def main():
 
     pages_1 = {
-        "Favoritos": [
-            st.Page("src/pages/Visao_Geral.py", title="Visão Geral"),
-            st.Page("src/pages/Desempenho_por_Categoria.py", title="Desempenho por Categoria"),
-            st.Page("src/pages/Impacto_de_Promoções.py", title="Impacto de Promoções"),
-            st.Page("src/pages/Perfil_dos_Clientes.py", title="Perfil dos Clientes"),
-
+        "Pages": [
+            st.Page("src/pages/General_Informations.py", title="General Informations"),
+            st.Page("src/pages/Performance_by_Category.py", title="Performance by Category"),
+            st.Page("src/pages/Impact_of_Promotions.py", title="Impact of Promotions"),
+            st.Page("src/pages/Costumer_Profile.py", title="Costumer Profile"),
         ],
     }
 

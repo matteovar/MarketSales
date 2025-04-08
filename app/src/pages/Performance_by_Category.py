@@ -6,7 +6,7 @@ from src.main import df, get_group_agg
 
 
 def show_hello():
-    st.title("Desempenho por Categoria de Produto")
+    st.title("Performance by Product Category")
     
     
     df_rec_cat = get_group_agg(df=df, group_col=["ProductID", "ProductCategory"], agg_col="FinalSalePrice", agg_type="sum")
@@ -15,6 +15,6 @@ def show_hello():
 
     filtered_df = df_rec_cat[df_rec_cat["ProductCategory"]==option]
     
-    line_chart1(df=filtered_df, x="ProductID", y= "FinalSalePrice", title="Receita por categoria de produto")
+    line_chart1(df=filtered_df, x="ProductID", y= "FinalSalePrice", title="Revenue by product category")
     
 show_hello()
