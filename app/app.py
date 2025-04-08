@@ -13,7 +13,7 @@ def main():
                 "src/pages/Performance_by_Category.py", title="Performance by Category"
             ),
             st.Page("src/pages/Impact_of_Promotions.py", title="Impact of Promotions"),
-            st.Page("src/pages/Costumer_Profile.py", title="Costumer Profile"),
+            st.Page("src/pages/Customer_Profile.py", title="Customer Profile"),
         ],
     }
 
