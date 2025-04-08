@@ -13,7 +13,7 @@ def show_dashboard():
     cols = st.columns(4)  
 
     with cols[0]:  
-        create_cards("Total Reveneu", f"{get_data_agg(df=df,column_name="FinalSalePrice", agg_type="sum"):,.2f}")
+        create_cards("Total Revenue", f"{get_data_agg(df=df,column_name="FinalSalePrice", agg_type="sum"):,.2f}")
 
     with cols[1]:  
         create_cards("Sold number", f"{get_data_agg(df=df,column_name="SalesQuantity", agg_type="sum")}")

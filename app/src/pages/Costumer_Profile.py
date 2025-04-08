@@ -11,8 +11,6 @@ def show_cli():
     
     st.title("Costumer Profile")
     
-    st.dataframe(df)
-    
     cols = st.columns(2)
     with cols[0]:
         df_gender = df["CustomerGender"].value_counts().reset_index()

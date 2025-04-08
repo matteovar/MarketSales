@@ -15,8 +15,14 @@ def show_dic():
     with cols[1]:
         df_disc_sales = disc_sales(df)
         
-        scatter_chart1(df_disc_sales, x = "DiscountPercentage", y = "FinalSalePrice", title="Sales with promotion vs. without promotion", hover_name = "ProductID",color="ProductCategory")
-
+        scatter_chart1(
+            df_disc_sales,
+            x="DiscountPercentage",
+            y="FinalSalePrice",
+            title="Descount x Final Price",
+            hover_name="ProductID",
+            color="ProductCategory"
+        )
     st.dataframe(get_group_agg(df=df, group_col="ProductCategory",agg_col="DiscountAmount", agg_type="mean").sort_values("DiscountAmount", ascending=False), hide_index= True)
 
 show_dic()
