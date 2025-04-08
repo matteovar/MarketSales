@@ -9,7 +9,9 @@ def main():
     pages_1 = {
         "Pages": [
             st.Page("src/pages/General_Informations.py", title="General Informations"),
-            st.Page("src/pages/Performance_by_Category.py", title="Performance by Category"),
+            st.Page(
+                "src/pages/Performance_by_Category.py", title="Performance by Category"
+            ),
             st.Page("src/pages/Impact_of_Promotions.py", title="Impact of Promotions"),
             st.Page("src/pages/Costumer_Profile.py", title="Costumer Profile"),
         ],
