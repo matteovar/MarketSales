@@ -12,7 +12,7 @@ An interactive dashboard built with Python, Pandas, and Streamlit for analyzing 
 
 ## 🚀 Getting Started
 
-1. Open the streamlit link: 
+1. [Streamlit link](https://multi-sales.streamlit.app)
 
 ## 📂 Expected Data Format
 
@@ -20,7 +20,7 @@ The CSV file should contain the following columns:
 
 TransactionID, ProductID, ProductName, ProductCategory, SalesQuantity, SalesPrice, DiscountAmount, FinalSalePrice, TransactionDate, TimeOfDay, SalesChannel, PaymentMethod, PaymentStatus, TransactionStatus, CustomerID, CustomerAge, CustomerGender, CustomerLocation, LoyaltyProgramMember, CustomerFeedbackRating, ReturnFlag, ReturnReason, StoreLocation, Region, PromoCodeUsed, DiscountPercentage, ShippingMethod, ShippingFee, ShippingStatus, SalesTax, CrossSellProducts, UpsellProducts
 
-(An example file is provided in the data/ folder)
+[Access to Dataset](https://www.kaggle.com/datasets/harinkl/sales-data)
 
 ## 📈 Sample Visualizations
 
