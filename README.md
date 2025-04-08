@@ -12,7 +12,7 @@ An interactive dashboard built with Python, Pandas, and Streamlit for analyzing 
 
 ## 🚀 Getting Started
 
-1. [Streamlit link](https://multi-sales.streamlit.app)
+1. [Streamlit link](https://market-sales.streamlit.app)
 
 ## 📂 Expected Data Format
 
