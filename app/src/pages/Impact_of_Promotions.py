@@ -1,9 +1,8 @@
 import pandas as pd
 import streamlit as st
-
+from src.main import df, disc_sales, get_group_agg
 from src.utils.plotly_charts.bar_chart import bar_chart1
 from src.utils.plotly_charts.scatter_chart import scatter_chart1
-from src.main import df, disc_sales, get_group_agg
 
 
 def show_dic():
@@ -56,6 +55,3 @@ def show_dic():
     )
 
     st.dataframe(df_disc_sales_data, hide_index=True)
-
-
-show_dic()

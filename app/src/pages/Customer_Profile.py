@@ -1,15 +1,12 @@
 import pandas as pd
 import streamlit as st
-
-from src.main import df
-from src.utils.plotly_charts.pie_chart import pie_chart1
+from src.main import df, get_group_agg
 from src.utils.plotly_charts.bar_chart import bar_chart1
-from src.main import get_group_agg
+from src.utils.plotly_charts.pie_chart import pie_chart1
 
 
 def show_cli():
-
-    st.title("Costumer Profile")
+    st.title("Customer Profile")
 
     cols = st.columns(2)
     with cols[0]:
@@ -21,10 +18,9 @@ def show_cli():
             names="CustomerGender",
             title="Customer by Gender",
             names_label="Gender",
-            values_label="Amount"
+            values_label="Amount",
         )
     with cols[1]:
-
         df_sales_gender = get_group_agg(
             df=df, group_col="CustomerAge", agg_col="FinalSalePrice", agg_type="sum"
         )
@@ -46,8 +42,5 @@ def show_cli():
         x="Region",
         y="FinalSalePrice",
         title="Revenue by Geographic Location",
-        y_label="Final Price"
+        y_label="Final Price",
     )
-
-
-show_cli()

@@ -1,11 +1,10 @@
 import pandas as pd
-import streamlit as st
 import plotly.express as px
-
-from src.utils.plotly_charts.bar_chart import bar_chart1
-from src.utils.plotly_charts.line_chart import line_chart1
+import streamlit as st
 from src.main import df, get_data_agg, get_group_agg
 from src.utils.cards import create_cards
+from src.utils.plotly_charts.bar_chart import bar_chart1
+from src.utils.plotly_charts.line_chart import line_chart1
 
 
 def show_dashboard():
@@ -63,6 +62,3 @@ def show_dashboard():
             x_label="Category",
             y_label="Final Price",
         )
-
-
-show_dashboard()

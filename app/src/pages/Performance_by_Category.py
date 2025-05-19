@@ -1,8 +1,7 @@
 import pandas as pd
 import streamlit as st
-
-from src.utils.plotly_charts.line_chart import line_chart1
 from src.main import df, get_group_agg
+from src.utils.plotly_charts.line_chart import line_chart1
 
 
 def show_hello():
@@ -29,6 +28,3 @@ def show_hello():
         x_label="Product",
         y_label="Final Price",
     )
-
-
-show_hello()
